@@ -296,11 +296,11 @@
 
             display-name = "Lower";
             bindings = <
-&Gravesigntilde  &none         &none             &none          &none              &none                        &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp FSLH   &kt BACKSPACE
-&none            &New_Refresh  &Default_ViewAll  &CTM_Comments  &Note_Cons_Orders  &none                        &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp ENTER
-&kp LSHFT        &none         &none             &Win1andWin2   &kp SPACE          &none                        &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none      &none
-&trans           &trans        &trans            &trans         &trans             &trans  &trans       &trans  &trans          &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV       &E_Sign
-                                                 &trans         &trans             &trans  &kp SPACE    &trans  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
+&Gravesigntilde  &none         &none             &none          &none              &none                             &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp FSLH   &kt BACKSPACE
+&none            &New_Refresh  &Default_ViewAll  &CTM_Comments  &Note_Cons_Orders  &none                             &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp ENTER
+&kp LSHFT        &none         &none             &Win1andWin2   &kp SPACE          &none                             &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none      &none
+&trans           &trans        &trans            &trans         &trans             &trans  &bt BT_PRV    &bt BT_NXT  &trans          &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV       &E_Sign
+                                                 &trans         &trans             &trans  &kp SPACE     &trans      &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
             >;
         };
 
@@ -314,22 +314,22 @@
 
             display-name = "Raise";
             bindings = <
-&none  &none  &none     &none         &none      &none                            &kp KP_NUMLOCK  &none     &none         &none      &kp MINUS         &kp EQUAL
-&none  &none  &none     &kp UP_ARROW  &none      &none                            &none           &none     &kp UP_ARROW  &none      &none             &kp NON_US_BACKSLASH
-&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none                            &none           &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none  &none  &none     &none         &none      &none  &bt BT_PRV    &bt BT_NXT  &none           &none     &none         &none      &none             &none
-                        &none         &none      &none  &kp SPACE     &none       &none           &none     &none
+&none  &none  &none     &none         &none      &none                      &kp KP_NUMLOCK  &none     &none         &none      &kp MINUS         &kp EQUAL
+&none  &none  &none     &kp UP_ARROW  &none      &none                      &none           &none     &kp UP_ARROW  &none      &none             &kp NON_US_BACKSLASH
+&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none                      &none           &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none  &none  &none     &none         &none      &none  &none        &none  &none           &none     &none         &none      &none             &none
+                        &none         &none      &none  &kp SPACE    &none  &none           &none     &none
             >;
         };
 
         Function-Keys {
             display-name = "Raise";
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                              &kp F6  &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
-&none      &none   &none   &none   &none   &none                               &trans  &trans    &kp UP_ARROW  &trans     &trans   &kp F12
-&trans     &trans  &trans  &trans  &trans  &trans                              &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
-&trans     &trans  &trans  &trans  &trans  &trans  &none        &none          &trans  &trans    &kp SPACE     &trans     &trans   &Gaming
-                           &trans  &VN     &trans  &kp SPACE    &kp LS(RCTRL)  &trans  &trans    &trans
+&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                 &kp F6  &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
+&none      &none   &none   &none   &none   &none                                  &trans  &trans    &kp UP_ARROW  &trans     &trans   &kp F12
+&trans     &trans  &trans  &trans  &trans  &trans                                 &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
+&trans     &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 1   &trans  &trans    &kp SPACE     &trans     &trans   &Gaming
+                           &trans  &VN     &trans  &kp SPACE       &kp LS(RCTRL)  &trans  &trans    &trans
             >;
         };
 
