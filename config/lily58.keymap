@@ -278,7 +278,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Layer-0 {
+        Zero {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -286,7 +286,7 @@
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
-            display-name = "Base";
+            display-name = "Work";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3         &kp N4  &kp N5                                             &kp N6      &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E          &kp R   &kp T                                              &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
@@ -296,7 +296,7 @@
             >;
         };
 
-        Layer-1 {
+        One {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -304,7 +304,7 @@
             // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Lower";
+            display-name = "Numpad";
             bindings = <
 &Gravesigntilde  &none         &none             &none          &none              &none                             &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp FSLH   &kt BACKSPACE
 &none            &New_Refresh  &Default_ViewAll  &CTM_Comments  &Note_Cons_Orders  &none                             &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp ENTER
@@ -314,7 +314,7 @@
             >;
         };
 
-        Layer-2 {
+        Two {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -322,18 +322,18 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Raise";
+            display-name = "Directions";
             bindings = <
-&none  &none  &none     &none         &none      &kp INSERT                      &kp KP_NUMLOCK  &none     &none         &none      &kp MINUS         &kp EQUAL
-&none  &none  &none     &kp UP_ARROW  &none      &none                           &none           &none     &kp UP_ARROW  &none      &none             &kp NON_US_BACKSLASH
-&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none                           &none           &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none  &none  &none     &none         &none      &none       &none        &none  &none           &none     &none         &none      &none             &none
-                        &none         &none      &none       &kp SPACE    &none  &none           &none     &none
+&none  &none     &none           &none      &none  &kp INSERT                      &kp KP_NUMLOCK  &none     &none           &none      &kp MINUS         &kp EQUAL
+&none  &none     &kp UP_ARROW    &none      &none  &none                           &kp PG_UP       &none     &none           &none      &none             &kp NON_US_BACKSLASH
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none                           &kp PAGE_DOWN   &none     &kp UP_ARROW    &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none  &none     &none           &none      &none  &none       &none        &none  &none           &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none             &none
+                                 &none      &none  &none       &kp SPACE    &none  &none           &none     &none
             >;
         };
 
-        Function-Keys {
-            display-name = "Raise";
+        Three {
+            display-name = "Func Keys";
             bindings = <
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                 &kp F6  &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
 &none      &none   &none   &none   &none   &none                                  &trans  &trans    &kp UP_ARROW  &trans     &trans   &kp F12
@@ -343,8 +343,8 @@
             >;
         };
 
-        Gaming {
-            display-name = "Base";
+        Four {
+            display-name = "Gaming";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3         &kp N4  &kp N5                                    &kp N6      &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E          &kp R   &kp T                                     &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
