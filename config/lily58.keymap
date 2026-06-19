@@ -110,7 +110,7 @@
 
         F_one {
             bindings = <&kp F1>;
-            key-positions = <1 0>;
+            key-positions = <1 2 3>;
         };
 
         Mute {
@@ -371,6 +371,18 @@
 
             label = "PASTE";
         };
+
+        Ctrl_Alt_Delete: Ctrl_Alt_Delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
+
+            label = "CTRL_ALT_DELETE";
+        };
     };
 
     keymap {
@@ -384,7 +396,7 @@
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
-            display-name = "Work";
+            display-name = "WORK";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                             &kp N6  &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                              &kp Y   &kp U         &kp I            &kp O    &kp P     &kp ENTER
@@ -402,7 +414,7 @@
             // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Numpad";
+            display-name = "NUMPAD";
             bindings = <
 &Gravesigntilde  &Clipboard   &none             &none         &none              &none                            &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
 &none            &NewRefresh  &Default_ViewAll  &CTB          &Note_Cons_Orders  &none                            &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp ENTER
@@ -420,7 +432,7 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Directions";
+            display-name = "ARROWS";
             bindings = <
 &none  &none     &none           &none      &none           &kp INSERT                      &kp KP_NUMLOCK  &none     &none           &none      &kp MINUS         &kp EQUAL
 &none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP       &none     &none           &none      &none             &kp NON_US_BACKSLASH
@@ -431,18 +443,18 @@
         };
 
         Three {
-            display-name = "Func Keys";
+            display-name = "FUNCTIONS";
             bindings = <
-&kp GRAVE  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                                        &kp F6   &kp F7    &kp F8        &kp F9     &kp F10  &kp BACKSPACE
-&none      &kp F11  &kp F12  &none   &none        &bt BT_CLR_ALL                                &trans   &trans    &none         &trans     &trans   &kp ENTER
-&trans     &trans   &trans   &trans  &trans       &bt BT_CLR                                    &trans   &none     &kp UP_ARROW  &none      &none    &none
-&trans     &trans   &trans   &Copy   &Paste       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans   &kp LEFT  &kp DOWN      &kp RIGHT  &trans   &Game_Zero
-                             &trans  &Three_Zero  &trans          &kp SPACE       &kp SPACE     &MyName  &trans    &kp RCTRL
+&kp GRAVE  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                                        &kp F6            &kp F7    &kp F8        &kp F9     &kp F10  &kp DELETE
+&none      &kp F11  &kp F12  &none   &none        &bt BT_CLR_ALL                                &Ctrl_Alt_Delete  &trans    &none         &trans     &trans   &kp ENTER
+&trans     &trans   &trans   &trans  &trans       &bt BT_CLR                                    &trans            &none     &kp UP_ARROW  &none      &none    &none
+&trans     &trans   &trans   &Copy   &Paste       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans            &kp LEFT  &kp DOWN      &kp RIGHT  &trans   &Game_Zero
+                             &trans  &Three_Zero  &trans          &kp SPACE       &kp SPACE     &MyName           &trans    &kp RCTRL
             >;
         };
 
         Four {
-            display-name = "Gaming";
+            display-name = "GAME";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                    &kp N6  &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y   &kp U         &kp I            &kp O    &kp P     &kp ENTER
