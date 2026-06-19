@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NEW_REFRESH";
             #binding-cells = <0>;
-            bindings = <&NewPatient>, <&none>;
+            bindings = <&NewPatient>, <&Refresh>;
         };
 
         Default_ViewAll: Default_ViewAll {
