@@ -105,7 +105,7 @@
 
         Mute {
             bindings = <&kp K_MUTE>;
-            key-positions = <56 57>;
+            key-positions = <46 47>;
         };
     };
 
