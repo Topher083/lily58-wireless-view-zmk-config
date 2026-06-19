@@ -117,8 +117,7 @@
                 <&macro_press>,
                 <&kp LEFT_WIN &kp V>,
                 <&macro_release>,
-                <&kp LEFT_WIN &kp V>,
-                <&macro_press>;
+                <&kp LEFT_WIN &kp V>;
 
             label = "CLIPBOARD";
         };
@@ -131,7 +130,9 @@
                 <&kp LEFT_ALT &kp F>,
                 <&macro_release>,
                 <&kp LEFT_ALT &kp F>,
-                <&macro_tap>,
+                <&macro_press>,
+                <&kp N>,
+                <&macro_release>,
                 <&kp N>;
 
             label = "NEWPATIENT";
@@ -145,7 +146,9 @@
                 <&kp LEFT_ALT &kp F>,
                 <&macro_release>,
                 <&kp LEFT_ALT &kp F>,
-                <&macro_tap>,
+                <&macro_press>,
+                <&kp I>,
+                <&macro_release>,
                 <&kp I>;
 
             label = "REFRESH";
@@ -159,7 +162,9 @@
                 <&kp LEFT_ALT &kp V>,
                 <&macro_release>,
                 <&kp LEFT_ALT &kp V>,
-                <&macro_tap>,
+                <&macro_press>,
+                <&kp A>,
+                <&macro_release>,
                 <&kp A>;
 
             label = "VIEWALL";
@@ -173,7 +178,9 @@
                 <&kp LEFT_ALT &kp V>,
                 <&macro_release>,
                 <&kp LEFT_ALT &kp V>,
-                <&macro_tap>,
+                <&macro_press>,
+                <&kp F>,
+                <&macro_release>,
                 <&kp F>;
 
             label = "DEFAULTVIEW";
