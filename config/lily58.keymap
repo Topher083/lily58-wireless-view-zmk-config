@@ -61,9 +61,9 @@
             bindings = <&Win_1>, <&Win_2>;
         };
 
-        Gaming: Gaming {
+        Game_Zero: Game_Zero {
             compatible = "zmk,behavior-tap-dance";
-            label = "GAMING";
+            label = "GAME_ZERO";
             #binding-cells = <0>;
             bindings = <&to 4>, <&to 0>;
         };
@@ -101,11 +101,6 @@
         Map {
             bindings = <&kp M>;
             key-positions = <40 41>;
-        };
-
-        Mute {
-            bindings = <&kp K_MUTE>;
-            key-positions = <46 47>;
         };
     };
 
@@ -306,11 +301,11 @@
 
             display-name = "Work";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                             &kp N6  &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                              &kp Y   &kp U         &kp I            &kp O    &kp P     &kp ENTER
-&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                              &kp H   &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp LEFT_ALT                &kp RIGHT_ALT  &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Gaming
-                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &mo 1          &mo 3   &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                             &kp N6      &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                              &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
+&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                              &kp H       &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp LEFT_ALT                &kp RIGHT_ALT  &kp N       &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Game_Zero
+                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &mo 1          &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
 
@@ -356,7 +351,7 @@
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4       &kp F5                                        &kp F6  &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
 &none      &none   &none   &none   &none        &bt BT_CLR_ALL                                &trans  &trans    &kp UP_ARROW  &trans     &trans   &kp F12
 &trans     &trans  &trans  &trans  &trans       &bt BT_CLR                                    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none
-&trans     &trans  &trans  &trans  &trans       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans  &trans    &kp SPACE     &trans     &trans   &Gaming
+&trans     &trans  &trans  &trans  &trans       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans  &trans    &kp SPACE     &trans     &trans   &Game_Zero
                            &trans  &Three_Zero  &trans          &kp SPACE       &kp RCTRL     &trans  &trans    &trans
             >;
         };
@@ -364,11 +359,11 @@
         Four {
             display-name = "Gaming";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                    &kp N6  &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y   &kp U         &kp I            &kp O    &kp P     &kp ENTER
-&mo 1      &kp A   &kp S   &kp D          &kp F        &kp G                                     &kp H   &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B      &kp LEFT_ALT    &kp RIGHT_ALT  &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Gaming
-                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp LCTRL       &mo 2          &mo 3   &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                    &kp N6      &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
+&mo 1      &kp A   &kp S   &kp D          &kp F        &kp G                                     &kp H       &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B      &kp LEFT_ALT    &kp RIGHT_ALT  &kp N       &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Game_Zero
+                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp LCTRL       &mo 2          &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
     };
