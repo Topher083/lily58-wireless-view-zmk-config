@@ -188,7 +188,9 @@
                 <&macro_release>,
                 <&kp LEFT_ALT &kp A>,
                 <&macro_tap>,
-                <&kp C &kp A>;
+                <&kp C>,
+                <&macro_press>,
+                <&kp A>;
 
             label = "CPRS_CTB";
         };
