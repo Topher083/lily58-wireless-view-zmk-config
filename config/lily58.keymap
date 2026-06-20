@@ -133,11 +133,6 @@
             key-positions = <3 4>;
         };
 
-        PrintScreen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <21 22>;
-        };
-
         j {
             bindings = <&kp J>;
             key-positions = <16 17>;
