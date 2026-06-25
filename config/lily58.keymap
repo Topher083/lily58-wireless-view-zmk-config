@@ -273,9 +273,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp O>,
+                <&kp LCTRL &kp N>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp O>;
+                <&kp LCTRL &kp N>;
 
             label = "CPRS_NOTES";
         };
@@ -285,9 +285,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp T>,
+                <&kp LCTRL &kp T>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp T>;
+                <&kp LCTRL &kp T>;
 
             label = "CRPS_CONS";
         };
@@ -297,9 +297,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp O>,
+                <&kp LCTRL &kp O>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp O>;
+                <&kp LCTRL &kp O>;
 
             label = "CPRS_ORDERS";
         };
