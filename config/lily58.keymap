@@ -94,7 +94,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ENDBRACKET_UNDERSCORE";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp MINUS>;
+            bindings = <&kp N0>, <&kp MINUS>;
         };
     };
 
