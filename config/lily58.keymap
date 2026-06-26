@@ -48,9 +48,9 @@
             bindings = <&CPRS_CTB>, <&CTM_Comments>;
         };
 
-        Note_Cons_Orders: Note_Cons_Orders {
+        Notes_Orders: Notes_Orders {
             compatible = "zmk,behavior-tap-dance";
-            label = "NOTE_CONS_ORDERS";
+            label = "NOTES_ORDERS";
             #binding-cells = <0>;
             bindings = <&CPRS_Notes>, <&CPRS_Orders>;
         };
@@ -419,11 +419,11 @@
 
             display-name = "NUMPAD";
             bindings = <
-&Gravesigntilde  &Clipboard   &none             &none         &none              &none                            &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
-&none            &NewRefresh  &Default_ViewAll  &CTB          &Note_Cons_Orders  &none                            &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp ENTER
-&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE          &none                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
-&none            &none        &none             &none         &none              &none  &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
-                                                &none         &none              &none  &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
+&Gravesigntilde  &Clipboard   &none             &none         &none          &none                            &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
+&none            &NewRefresh  &Default_ViewAll  &CTB          &Notes_Orders  &none                            &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp ENTER
+&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE      &none                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
+&none            &none        &none             &none         &none          &none  &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
+                                                &none         &none          &none  &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
             >;
         };
 
