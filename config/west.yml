@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-nice-view-gem              # new entry, the repository name of the module
+    - name: zmk-nice-view-custom                # new entry, the repository name of the module
       remote: Topher083                      # new entry
       revision: main                            # new entry
   self:
