@@ -402,11 +402,11 @@
 
             display-name = "BASE";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                        &kp N6  &kp N7        &kp N8           &kp N9   &EndBracket_underscore  &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                         &kp Y   &kp U         &kp I            &kp O    &kp P                   &kp ENTER
-&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                         &kp H   &kp J         &kp K            &kp L    &kp SEMI                &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp LBKT                    &kp RBKT  &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH                &Game_Zero
-                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &mo 2     &mo 3   &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                       &kp N6  &kp N7        &kp N8           &kp N9   &EndBracket_underscore  &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                        &kp Y   &kp U         &kp I            &kp O    &kp P                   &kp ENTER
+&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                        &kp H   &kp J         &kp K            &kp L    &kp SEMI                &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp HOME                    &kp END  &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH                &Game_Zero
+                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &mo 2    &mo 3   &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
 
