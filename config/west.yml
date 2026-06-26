@@ -2,16 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: m165437 
-      url-base: https://github.com/M165437 
-      
+    - name: Topher083                        # new entry
+      url-base: https://github.com/Topher083 #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v4.1.0
+      revision: v0.3
       import: app/west.yml
-    - name: nice-view-gem 
-      remote: m165437 
-      revision: main 
+    - name: zmk-nice-view-custom                # new entry, the repository name of the module
+      remote: Topher083                      # new entry
+      revision: main                            # new entry
   self:
     path: config
