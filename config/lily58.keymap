@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NOTE_CONS_ORDERS";
             #binding-cells = <0>;
-            bindings = <&CPRS_Notes>, <&CRPS_Cons>, <&CPRS_Orders>;
+            bindings = <&CPRS_Notes>, <&CPRS_Orders>;
         };
 
         Win1andWin2: Win1andWin2 {
