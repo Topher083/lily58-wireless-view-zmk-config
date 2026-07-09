@@ -401,11 +401,11 @@
 
             display-name = "BASE";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                         &kp N6  &kp N7        &kp N8           &kp N9   &EndBracket_underscore  &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                          &kp Y   &kp U         &kp I            &kp O    &kp P                   &kp ENTER
-&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                          &kp H   &kp J         &kp K            &kp L    &kp SEMI                &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp HOME                    &kp END    &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH                &Game_Zero
-                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &kp ENTER  &mo 2   &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                       &kp N6      &kp N7        &kp N8           &kp N9   &EndBracket_underscore  &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                        &kp Y       &kp U         &kp I            &kp O    &kp P                   &kp ENTER
+&mo 2      &kp A   &kp S   &kp D          &kp F        &kp G                                        &kp H       &kp J         &kp K            &kp L    &kp SEMI                &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B   &kp HOME                    &kp END  &kp N       &kp M         &kp COMMA        &kp DOT  &kp FSLH                &Game_Zero
+                           &kp LEFT_META  &Three_Zero  &mo 1   &Spaces_Ctrl LCTRL SPACE    &mo 2    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
 
@@ -419,11 +419,11 @@
 
             display-name = "NUMPAD";
             bindings = <
-&Gravesigntilde  &Clipboard   &none             &none         &none          &none                                 &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
-&none            &NewRefresh  &Default_ViewAll  &CTB          &Notes_Orders  &CRPS_Cons                            &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp ENTER
-&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE      &none                                 &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
-&none            &none        &none             &none         &none          &none       &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
-                                                &none         &none          &none       &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
+&Gravesigntilde  &Clipboard   &none             &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
+&none            &NewRefresh  &Default_ViewAll  &CTB          &CPRS_Notes  &CRPS_Cons                              &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp ENTER
+&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE    &CPRS_Orders                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
+&none            &none        &none             &none         &none        &none         &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
+                                                &none         &none        &none         &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
             >;
         };
 
@@ -438,9 +438,9 @@
             display-name = "ARROWS";
             bindings = <
 &none  &none     &none           &none      &none           &kp INSERT                      &kp KP_NUMLOCK  &none     &none           &none      &kp MINUS         &kp EQUAL
-&none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP       &none     &none           &none      &none             &kp NON_US_BACKSLASH
-&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT  &kp END                         &kp PAGE_DOWN   &none     &kp UP_ARROW    &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none  &none     &none           &none      &none           &none       &none        &none  &none           &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none             &none
+&none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP       &none     &kp UP_ARROW    &none      &none             &kp NON_US_BACKSLASH
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT  &kp END                         &kp PAGE_DOWN   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none  &none     &none           &none      &none           &none       &none        &none  &none           &none     &none           &none      &none             &none
                                  &none      &none           &none       &kp SPACE    &none  &none           &none     &none
             >;
         };
@@ -449,9 +449,9 @@
             display-name = "FUNCTIONS";
             bindings = <
 &kp GRAVE  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                                        &kp F6            &kp F7    &kp F8        &kp F9     &kp F10  &kp DELETE
-&none      &kp F11  &kp F12  &none   &none        &bt BT_CLR_ALL                                &Ctrl_Alt_Delete  &trans    &none         &trans     &trans   &kp ENTER
-&trans     &trans   &trans   &trans  &trans       &bt BT_CLR                                    &trans            &none     &kp UP_ARROW  &none      &none    &none
-&trans     &trans   &trans   &Copy   &Paste       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans            &kp LEFT  &kp DOWN      &kp RIGHT  &trans   &Game_Zero
+&none      &kp F11  &kp F12  &none   &none        &bt BT_CLR_ALL                                &Ctrl_Alt_Delete  &trans    &kp UP        &trans     &trans   &kp ENTER
+&trans     &trans   &trans   &trans  &trans       &bt BT_CLR                                    &trans            &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none    &none
+&trans     &trans   &trans   &Copy   &Paste       &trans          &bt BT_SEL 0    &bt BT_SEL 1  &trans            &none     &none         &none      &trans   &Game_Zero
                              &trans  &Three_Zero  &trans          &kp SPACE       &kp SPACE     &MyName           &trans    &kp RCTRL
             >;
         };
@@ -459,11 +459,11 @@
         Four {
             display-name = "GAME";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                    &kp N6  &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y   &kp U         &kp I            &kp O    &kp P     &kp ENTER
-&mo 1      &kp A   &kp S   &kp D          &kp F        &kp G                                     &kp H   &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B      &kp LEFT_ALT    &kp RIGHT_ALT  &kp N   &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Game_Zero
-                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp SPACE       &mo 3          &mo 2   &kp C_VOL_DN  &kp C_VOLUME_UP
+&kp ESC    &kp N1  &kp N2  &kp N3         &kp N4       &kp N5                                    &kp N6      &kp N7        &kp N8           &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
+&mo 1      &kp A   &kp S   &kp D          &kp F        &kp G                                     &kp H       &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B      &kp LEFT_ALT    &kp RIGHT_ALT  &kp N       &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Game_Zero
+                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp SPACE       &mo 2          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
     };
