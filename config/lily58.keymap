@@ -508,5 +508,16 @@
                                  &none      &none           &none       &kp SPACE    &none  &none          &none            &none
             >;
         };
+
+        Six {
+            display-name = "ARROWS";
+            bindings = <
+&none  &none     &none           &none      &none           &kp INSERT                      &kp KP_NUMLOCK  &none     &none           &none      &kp MINUS         &kp EQUAL
+&none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP       &none     &kp UP_ARROW    &none      &none             &kp NON_US_BACKSLASH
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT  &kp END                         &kp PAGE_DOWN   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none  &none     &none           &none      &none           &none       &none        &none  &none           &none     &none           &none      &none             &none
+                                 &none      &none           &none       &kp SPACE    &none  &none           &none     &none
+            >;
+        };
     };
 };
