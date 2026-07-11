@@ -96,6 +96,13 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp MINUS>;
         };
+
+        Bkspc_equals: Bkspc_equals {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BKSPC_EQUALS";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp EQUAL>;
+        };
     };
 
     combos {
@@ -406,7 +413,7 @@
                 <&macro_press>,
                 <&kp LEFT_WIN &kp NUMBER_3>,
                 <&macro_release>,
-                <&kp LEFT_WIN &kp NUMBER_2>;
+                <&kp LEFT_WIN &kp NUMBER_3>;
 
             label = "WIN_3";
         };
@@ -487,29 +494,18 @@
 &kp TAB    &kp Q   &kp W   &kp E          &kp R        &kp T                                     &kp Y       &kp U         &kp I            &kp O    &kp P     &kp ENTER
 &mo 5      &kp A   &kp S   &kp D          &kp F        &kp G                                     &kp H       &kp J         &kp K            &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C          &kp V        &kp B      &kp LEFT_ALT    &kp RIGHT_ALT  &kp N       &kp M         &kp COMMA        &kp DOT  &kp FSLH  &Game_Zero
-                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp SPACE       &mo 6          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
+                           &kp LEFT_META  &Three_Zero  &kp LCTRL  &kp SPACE       &mo 5          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
 
         Five {
-            display-name = "NUMPAD";
+            display-name = "MISC";
             bindings = <
-&Gravesigntilde  &Clipboard   &Screen_Shot      &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
-&none            &NewRefresh  &Default_ViewAll  &CTB          &CPRS_Notes  &CRPS_Cons                              &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp ENTER
-&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE    &CPRS_Orders                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
-&none            &none        &none             &none         &none        &none         &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
-                                                &none         &none        &none         &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
-            >;
-        };
-
-        Six {
-            display-name = "ARROWS";
-            bindings = <
-&none  &none     &none           &none      &none           &kp INSERT                      &kp KP_NUMLOCK  &none     &none           &none      &kp MINUS         &kp EQUAL
-&none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP       &none     &kp UP_ARROW    &none      &none             &kp NON_US_BACKSLASH
-&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT  &kp END                         &kp PAGE_DOWN   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none  &none     &none           &none      &none           &none       &none        &none  &none           &none     &none           &none      &none             &none
-                                 &none      &none           &none       &kp SPACE    &none  &none           &none     &none
+&none  &none     &none           &none      &none           &kp INSERT                      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &Bkspc_equals
+&none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp NON_US_BACKSLASH
+&none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_SHIFT  &kp END                         &kp PAGE_DOWN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&none  &none     &none           &none      &none           &none       &none        &none  &none          &kp KP_NUMBER_0  &none            &none            &none              &none
+                                 &none      &none           &none       &kp SPACE    &none  &none          &none            &none
             >;
         };
     };
