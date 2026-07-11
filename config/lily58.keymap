@@ -499,7 +499,7 @@
         };
 
         Five {
-            display-name = "MISC";
+            display-name = "NUMPAD";
             bindings = <
 &none  &none     &none           &none      &none           &kp INSERT                      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &Bkspc_equals
 &none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp NON_US_BACKSLASH
@@ -510,7 +510,7 @@
         };
 
         Six {
-            display-name = "MISC";
+            display-name = "ARROWS";
             bindings = <
 &none  &none     &none           &none      &none           &kp INSERT                      &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &Bkspc_equals
 &none  &none     &kp UP_ARROW    &none      &none           &kp HOME                        &kp PG_UP      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp NON_US_BACKSLASH
