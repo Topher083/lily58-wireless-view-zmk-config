@@ -386,6 +386,30 @@
 
             label = "CTRL_ALT_DELETE";
         };
+
+        Screen_Shot: Screen_Shot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+
+            label = "SCREEN_SHOT";
+        };
+
+        Win_3: Win_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp NUMBER_2>;
+
+            label = "WIN_3";
+        };
     };
 
     keymap {
@@ -419,9 +443,9 @@
 
             display-name = "NUMPAD";
             bindings = <
-&Gravesigntilde  &Clipboard   &none             &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
+&Gravesigntilde  &Clipboard   &Screen_Shot      &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
 &none            &NewRefresh  &Default_ViewAll  &CTB          &CPRS_Notes  &CRPS_Cons                              &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp ENTER
-&kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE    &CPRS_Orders                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
+&kp LSHFT        &none        &Win_3            &Win1andWin2  &kp SPACE    &CPRS_Orders                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
 &none            &none        &none             &none         &none        &none         &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
                                                 &none         &none        &none         &kp SPACE     &none       &kp LEFT_ARROW  &kp DOWN         &kp RIGHT
             >;
@@ -470,7 +494,7 @@
         Five {
             display-name = "NUMPAD";
             bindings = <
-&Gravesigntilde  &Clipboard   &none             &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
+&Gravesigntilde  &Clipboard   &Screen_Shot      &none         &none        &none                                   &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_Underscore  &kt BACKSPACE
 &none            &NewRefresh  &Default_ViewAll  &CTB          &CPRS_Notes  &CRPS_Cons                              &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none              &kp ENTER
 &kp LSHFT        &none        &none             &Win1andWin2  &kp SPACE    &CPRS_Orders                            &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none              &none
 &none            &none        &none             &none         &none        &none         &bt BT_PRV    &bt BT_NXT  &none           &kp KP_NUMBER_0  &kp UP_ARROW     &kp PERIOD       &PIV               &E_Sign
